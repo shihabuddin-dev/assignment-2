@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ body {
     font-family: "Quicksand", "Raleway", serif;
     margin: 0 auto;
     box-sizing: border-box;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 section {
@@ -21,9 +22,14 @@ section {
 /* Common styles */
 :root {
     --orange-color: #fea301;
+    --orange-color2: #F0AA00;
     --skyblue-color: #01acfd;
+    --skyblue-color2: #64C8FF;
     --cyan-color: #05d4df;
+    --cyan-color2: #3CD8E8;
     --purple-color: #5d58ef;
+    --purple-color2: #8700FF;
+    --green-color: #95B226;
     --black-color: #000000;
     --white-color: #ffffff;
     --first-font: 1rem;
@@ -74,6 +80,10 @@ section {
 
 .d-grid {
     display: grid;
+}
+
+.ta-center {
+    text-align: center;
 }
 
 .container {
@@ -158,7 +168,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 0;
-    text-align: center;
 }
 
 .c-whole-card {
@@ -186,45 +195,96 @@ section {
 
 .c-card {
     width: 367px;
-    height: 476px;
     padding: 53px 40px;
     box-sizing: border-box;
-    border: 0.94px solid rgb(222, 245, 255);
     border-radius: 18px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
 }
 
 .c-card1 {
+    border: 0.94px solid rgb(222, 245, 255);
     background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
 
 .c-card2 {
+    border: 0.94px solid rgb(255, 244, 220);
     background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
 
 .c-card3 {
+    border: 0.94px solid rgb(242, 232, 255);
     background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
 
 .c-card a {
     text-decoration: none;
-font-family: Quicksand;
-font-size: 0.9rem;
-font-weight: 700;
+    font-family: Quicksand;
+    font-size: 0.9rem;
+    font-weight: 700;
 
 }
 
 .c-card1 a {
-    color: var(--skyblue-color);
+    color: var(--skyblue-color2);
 
 }
 
 .c-card2 a {
-    color: var(--orange-color);
+    color: var(--orange-color2);
 
 }
 
 .c-card3 a {
-    color: var(--purple-color);
+    color: var(--purple-color2);
+
+}
+
+/* Our Stories Section Styles  */
+.stories {
+    background: url(../assets/images/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story {
+    padding: 60px 0;
+}
+
+.s-card {
+    padding: 80px 0;
+}
+
+.story-card {
+    width: 540px;
+    height: 630px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+
+.story-card img {
+    border-radius: 16px 16px 0 0;
+}
+
+.story-card-title {
+    padding: 50px 99px 30px 38px;
+}
+
+.story-card-caption {
+    padding: 28px 50px 20px 38px;
+}
+
+.story-card-btn {
+    border-radius: 50px;
+    background: var(--cyan-color2);
+    border: none;
+    padding: 15px 20px;
+    color: var(--white-color);
+    font-family: Raleway;
+    font-size: var(--first-font);
+    font-weight: 500;
+    position: absolute;
+    left: 30px;
+    top: 49%;
 
 }
