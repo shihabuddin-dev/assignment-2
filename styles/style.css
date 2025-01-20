@@ -1,5 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-body{
+body {
     font-family: "Quicksand", serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common styles */
+:root {
+    --orange-color: #fea301;
+    --skyblue-color: #01acfd;
+    --cyan-color: #05d4df;
+    --purple-color: #5d58ef;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --first-font: 1rem;
+    --second-font: 2rem;
+}
+
+.section-title {
+    color: var(--black-color);
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+.btn {
+    color: var(--white-color);
+    font-size: var(--first-font);
+    font-weight: 700;
+    padding: 12px 36px;
+    border-radius: 12px;
+    border: none;
+}
+
+.btn-orange {
+    background: var(--orange-color);
+}
+
+.btn-black {
+    background: var(--black-color);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1160px;
+}
+
+/* Navbar Section styles  */
+header {
+    background-color: #F7F7F7;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+    height: 84px;
+    padding: 20px 0;
+
+}
+
+.navbar-icon-text {
+    color: var(--black-color);
+    font-size: var(--second-font);
+    font-weight: 700;
+}
+
+.navbar-logo {
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: var(--first-font);
+    font-weight: 700;
+}
+
+.navbar li:nth-child(1) a {
+    color: var(--orange-color);
+}
+
+.navbar li:nth-child(2) a {
+    color: var(--skyblue-color);
+}
+
+.navbar li:nth-child(3) a {
+    color: var(--cyan-color);
+}
+
+.navbar li:nth-child(4) a {
+    color: var(--purple-color);
+}
+
+.navbar-text {
+    gap: 32px;
 }
