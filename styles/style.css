@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: "Quicksand", serif;
+    font-family: "Quicksand", "Raleway", serif;
     margin: 0 auto;
     box-sizing: border-box;
     max-width: 1440px;
@@ -70,20 +72,16 @@ section {
     display: flex;
 }
 
+.d-grid {
+    display: grid;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1160px;
 }
 
 /* Navbar Section styles  */
-header {
-    background-color: #F7F7F7;
-}
-
-.hamburger {
-    display: none;
-}
-
 .navbar {
     align-items: center;
     justify-content: space-between;
@@ -133,6 +131,10 @@ header {
     gap: 32px;
 }
 
+.hamburger {
+    display: none;
+}
+
 /* Hero Section styles */
 .hero {
     align-items: center;
@@ -148,4 +150,81 @@ header {
 
 .hero-caption {
     padding: 24px 0;
+}
+
+/* Standard Curriculum Section Styles */
+.curriculum {
+    background-image: url(../assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.c-whole-card {
+    padding: 80px 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+
+}
+
+.c-card-title {
+    color: var(--black-color);
+    font-size: 1.53rem;
+    font-weight: 700;
+    padding-top: 32px;
+}
+
+.c-card-caption {
+    padding: 33px 0;
+    color: #808080;
+    font-family: Raleway;
+    font-size: var(--first-font);
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.c-card {
+    width: 367px;
+    height: 476px;
+    padding: 53px 40px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+.c-card1 {
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.c-card2 {
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.c-card3 {
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.c-card a {
+    text-decoration: none;
+font-family: Quicksand;
+font-size: 0.9rem;
+font-weight: 700;
+
+}
+
+.c-card1 a {
+    color: var(--skyblue-color);
+
+}
+
+.c-card2 a {
+    color: var(--orange-color);
+
+}
+
+.c-card3 a {
+    color: var(--purple-color);
+
 }
