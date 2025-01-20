@@ -23,7 +23,12 @@ body {
     --first-font: 1rem;
     --second-font: 2rem;
 }
-
+.orange-color{
+    color: var(--orange-color);
+}
+.skyblue-color{
+    color: var(--skyblue-color);
+}
 .section-title {
     color: var(--black-color);
     font-size: 2.9rem;
@@ -112,4 +117,18 @@ header {
 
 .navbar-text {
     gap: 32px;
+}
+/* Hero Section styles */
+.hero{
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.hero-title{
+font-size: 56px;
+font-weight: 700;
+line-height: 61px;
+}
+.hero-caption{
+    padding: 24px 0;
 }

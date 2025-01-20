@@ -1,21 +1,18 @@
-@media only screen and (max-width:390px){
+@media only screen and (max-width:576px){
+
     body{
         margin: 0 auto;
-        max-width: 390px;
-        
     }
+    /* navbar Styles  */
     .navbar{
         padding: 12px 16px;
         border-bottom: 0.5px solid var(--orange-color) ;
     }
-    .navbar ul, button{
+    .navbar ul, button, p{
         display: none;
     }
     .navbar span{
         display: block;
     }
-    .navbar-icon-text{
-        display: none;
-    }
-    
+    /* Hero Styles  */
 }
