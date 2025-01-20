@@ -30,6 +30,7 @@ section {
     --purple-color: #5d58ef;
     --purple-color2: #8700FF;
     --green-color: #95B226;
+    --blue-color: #5d58f0;
     --black-color: #000000;
     --white-color: #ffffff;
     --first-font: 1rem;
@@ -252,9 +253,10 @@ section {
 
 .s-card {
     padding: 80px 0;
+    gap: 20px;
 }
 
-.story-card {
+.story-card-left {
     width: 540px;
     height: 630px;
     border-radius: 16px;
@@ -276,7 +278,7 @@ section {
 
 .story-card-btn {
     border-radius: 50px;
-    background: var(--cyan-color2);
+    background: var(--purple-color2);
     border: none;
     padding: 15px 20px;
     color: var(--white-color);
@@ -285,6 +287,62 @@ section {
     font-weight: 500;
     position: absolute;
     left: 30px;
-    top: 49%;
+    top: 50%;
 
+}
+/* Right side card  */
+.s-card-right{
+    width: 290px;
+    height: 301.61px;
+    border-radius: 16px;
+background: var(--white-color);
+position: relative;
+}
+.s-card-right img{
+    border-radius: 16px 16px 0px 0px;
+}
+.s-card-title{
+    color: var(--black-color);
+font-size: var(--first-font);
+font-weight: 700;
+line-height: 28px;
+padding: 35px 40px 33px 37px;
+}
+.s-card-btn{
+    padding: 9px 19px;
+    border-radius: 47.93px;
+    border: none;
+color: var(--white-color);
+font-family: Raleway;
+font-size: var(--first-font);
+font-weight: 500;
+}
+.sc-btn1, .sc-btn2{
+    position: absolute;
+left: 13%;
+bottom: 35%;
+}
+.sc-btn3, .sc-btn4{
+    position: absolute;
+    left: 13%;
+bottom: 33%;
+}
+.sc-btn1{
+    background: var(--skyblue-color);
+}
+.sc-btn2{
+background: var(--green-color);
+}
+.sc-btn3{
+background: var(--orange-color);
+}
+.sc-btn4{
+    background: var(--blue-color);
+}
+.story-card-right{
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.story-btn{
+    justify-content: center;
 }

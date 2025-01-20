@@ -30,7 +30,7 @@
     }
 
     /* Hero Styles  */
-    .hero { 
+    .hero {
         padding: 20px 16px;
         flex-direction: column-reverse;
         gap: 20px;
@@ -86,16 +86,52 @@
         font-weight: 500;
         line-height: 19.16px;
     }
+
     .c-card a {
-    font-size: 0.62rem;
-    padding-bottom: 36px;
+        font-size: 0.62rem;
+        padding-bottom: 36px;
     }
-    .slidebar{
+
+    .slidebar {
         display: none;
     }
+
     /* Our Stories Section Styles  */
-    .story-card{
-        display: none;
+    .stories{
+        margin: 0 auto;
+        padding: 0px 16px;
+        justify-content: center;
+        align-items: center;
     }
-    
+
+    .story-card-left {
+        display: none;
+        
+    }
+
+    .story-card-right {
+        gap: 11px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 16px;
+    }
+
+    .s-card-right {
+        width: 174px;
+        height: 180px;
+    }
+    .s-card-right img{
+        width: 100%;
+    }
+    .s-card-btn{
+        padding: 6px 12px;
+    font-weight: 500;
+    font-size: 0.62rem;
+font-weight: 500;
+    }
+    .s-card-title{
+        font-size: 9.13px;
+font-weight: 700;
+line-height: 17.12px;
+padding: 14px 32px 19px 22px;
+    }
 }
