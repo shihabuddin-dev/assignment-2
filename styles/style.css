@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Quicksand", serif;
     margin: 0 auto;
@@ -7,9 +12,8 @@ body {
     max-width: 1440px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+section {
+    padding-bottom: 60px;
 }
 
 /* Common styles */
@@ -23,16 +27,26 @@ body {
     --first-font: 1rem;
     --second-font: 2rem;
 }
-.orange-color{
+
+.orange-color {
     color: var(--orange-color);
 }
-.skyblue-color{
+
+.skyblue-color {
     color: var(--skyblue-color);
 }
+
 .section-title {
     color: var(--black-color);
     font-size: 2.9rem;
     font-weight: 700;
+}
+
+.section-caption {
+    color: var(--black-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .btn {
@@ -118,17 +132,20 @@ header {
 .navbar-text {
     gap: 32px;
 }
+
 /* Hero Section styles */
-.hero{
+.hero {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
 }
-.hero-title{
-font-size: 56px;
-font-weight: 700;
-line-height: 61px;
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 61px;
 }
-.hero-caption{
+
+.hero-caption {
     padding: 24px 0;
 }
