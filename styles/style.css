@@ -299,6 +299,7 @@ marquee:hover {
     font-weight: 700;
 
 }
+
 .c-card a:hover {
     color: var(--black-color);
     font-size: var(--first-font);
