@@ -12,7 +12,11 @@ body {
     font-family: "Quicksand", "Raleway", serif;
     margin: 0 auto;
     box-sizing: border-box;
-    /* max-width: 1440px; */
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1160px;
 }
 
 section {
@@ -34,6 +38,8 @@ section {
     --black-color: #000000;
     --white-color: #ffffff;
     --first-font: 1rem;
+    --first-font1: 1.25rem;
+    --first-font2: 1.5rem;
     --second-font: 2rem;
 }
 
@@ -41,8 +47,24 @@ section {
     color: var(--orange-color);
 }
 
+.orange-color:hover {
+    color: var(--skyblue-color);
+}
+
 .skyblue-color {
     color: var(--skyblue-color);
+}
+
+.skyblue-color:hover {
+    color: var(--black-color);
+}
+
+.purple-color {
+    color: var(--purple-color);
+}
+
+.purple-color:hover {
+    color: var(--orange-color);
 }
 
 .section-title {
@@ -51,19 +73,30 @@ section {
     font-weight: 700;
 }
 
+.section-title:hover {
+    color: var(--orange-color);
+
+}
+
 .section-caption {
     color: var(--black-color);
-    font-size: 1.25rem;
+    font-size: var(--first-font1);
     font-weight: 400;
     line-height: 25px;
 }
 
 .btn {
     color: var(--white-color);
-    font-size: 1.25rem;
-    padding: 12px 36px;
+    font-size: var(--first-font1);
+    padding: 12px 34px;
     border-radius: 12px;
     border: none;
+}
+
+.btn:hover {
+    background-color: var(--skyblue-color);
+    transition: ease-in-out 1s;
+    box-shadow: 1px 1px 2px #ceb7b7;
 }
 
 .btn-orange {
@@ -74,6 +107,10 @@ section {
 .btn-black {
     background: var(--black-color);
     font-weight: 700;
+}
+
+.btn-black:hover {
+    background: var(--orange-color);
 }
 
 .d-flex {
@@ -88,16 +125,13 @@ section {
     text-align: center;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1160px;
-}
+
 
 /* Navbar Section styles  */
 .navbar {
     align-items: center;
     justify-content: space-between;
-    height: 84px;
+    height: 62px;
     padding: 20px 0;
 
 }
@@ -106,6 +140,10 @@ section {
     color: var(--black-color);
     font-size: var(--second-font);
     font-weight: 700;
+}
+
+.navbar-icon-text:hover {
+    color: var(--skyblue-color);
 }
 
 .navbar-logo {
@@ -121,6 +159,10 @@ section {
     text-decoration: none;
     font-size: var(--first-font);
     font-weight: 700;
+}
+
+.navbar ul li a:hover {
+    color: var(--purple-color2);
 }
 
 .navbar li:nth-child(1) a {
@@ -148,6 +190,15 @@ section {
 }
 
 /* Hero Section styles */
+marquee {
+    font-weight: 700;
+    color: var(--skyblue-color);
+}
+
+marquee:hover {
+    color: var(--orange-color);
+}
+
 .hero {
     align-items: center;
     justify-content: space-between;
@@ -160,8 +211,17 @@ section {
     line-height: 61px;
 }
 
+.hero-title:hover {
+    color: var(--purple-color);
+}
+
 .hero-caption {
     padding: 24px 0;
+}
+
+.hero-caption:hover {
+    color: var(--blue-color);
+    font-weight: 600;
 }
 
 /* Standard Curriculum Section Styles */
@@ -186,6 +246,11 @@ section {
     padding-top: 32px;
 }
 
+.c-card-title:hover {
+    color: var(--purple-color2);
+
+}
+
 .c-card-caption {
     padding: 33px 0;
     color: #808080;
@@ -195,12 +260,21 @@ section {
     line-height: 28px;
 }
 
+.c-card-caption:hover {
+    color: var(--black-color);
+}
+
 .c-card {
     width: 367px;
     padding: 53px 40px;
     box-sizing: border-box;
     border-radius: 18px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+.c-card:hover {
+    background: linear-gradient(180.00deg, rgba(141, 189, 151, 0.185), rgba(119, 97, 97, 0) 40%), rgba(127, 127, 180, 0.103);
+    transition: ease-in-out 1s;
 }
 
 .c-card1 {
@@ -225,6 +299,10 @@ section {
     font-weight: 700;
 
 }
+.c-card a:hover {
+    color: var(--black-color);
+    font-size: var(--first-font);
+}
 
 .c-card1 a {
     color: var(--skyblue-color2);
@@ -239,6 +317,31 @@ section {
 .c-card3 a {
     color: var(--purple-color2);
 
+}
+
+.slidebar {
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.slidebar-left,
+.slidebar-right {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+
+}
+
+.slidebar-left:hover,
+.slidebar-right:hover {
+    background-color: var(--purple-color);
+    transition: ease-in-out 1s;
+}
+
+.slidebar img {
+    padding: 15px;
 }
 
 /* Our Stories Section Styles  */
@@ -291,11 +394,16 @@ section {
 
 }
 
+.story-card-btn:hover {
+    background: var(--orange-color);
+}
+
 /* Right side card  */
 .story-card-right {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 }
+
 .s-card-right {
     width: 290px;
     height: 301.61px;
@@ -316,6 +424,10 @@ section {
     padding: 35px 40px 33px 37px;
 }
 
+.s-card-title:hover {
+    color: var(--purple-color2);
+}
+
 .s-card-btn {
     padding: 9px 19px;
     border-radius: 47.93px;
@@ -324,6 +436,10 @@ section {
     font-family: Raleway;
     font-size: var(--first-font);
     font-weight: 500;
+}
+
+.s-card-btn:hover {
+    background-color: var(--purple-color2);
 }
 
 .sc-btn1,
@@ -379,7 +495,7 @@ footer {
 
 .footer-left p {
     color: var(--white-color);
-    font-size: 1.25rem;
+    font-size: var(--first-font1);
     font-weight: 400;
     line-height: 25px;
     padding-top: 35px;
@@ -393,7 +509,7 @@ footer {
 
 .footer-text {
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: var(--first-font2);
     font-weight: 700;
     padding-bottom: 32px;
 }
@@ -406,6 +522,15 @@ footer {
 .footer-center a {
     color: var(--white-color);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: var(--first-font2);
     font-weight: 500;
+}
+
+.footer-right h3 {
+    font-size: 1.62rem;
+    font-weight: 700;
+}
+
+.footer-right img {
+    padding-right: 10px;
 }

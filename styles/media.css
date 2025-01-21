@@ -2,13 +2,13 @@
 
     body {
         margin: 0 auto;
-        
+
     }
 
     .btn {
-        padding: 12px 24px;
-        font-size: 1rem;
-
+        padding: 10px 22px;
+        font-size: var(--first-font);
+        border-radius: 8px;
     }
 
     .section-title {
@@ -22,6 +22,11 @@
         border-bottom: 0.5px solid var(--orange-color);
     }
 
+    .navbar-logo img {
+        width: 46px;
+        height: 46px;
+    }
+
     .navbar ul,
     .nav-btn,
     .navbar-icon-text {
@@ -33,6 +38,10 @@
     }
 
     /* Hero Styles  */
+    marquee {
+        margin-top: 20px;
+    }
+
     .hero {
         padding: 20px 16px;
         flex-direction: column-reverse;
@@ -56,15 +65,17 @@
         line-height: 18px;
         padding: 18px 0;
     }
-    .hero-img{
-        /* max-width: 576px; */
-    
+
+    .hero-img {
         display: flex;
-        /* width: 100%; */
-    
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
     }
+
     .hero-img img {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     /* Standard Curriculum section Styles  */
@@ -84,6 +95,21 @@
         width: 90%;
         padding: 36px 28px;
         justify-self: center;
+    }
+
+    .c-card1 img {
+        width: 88px;
+        height: 75px;
+    }
+
+    .c-card2 img {
+        width: 93px;
+        height: 84px;
+    }
+
+    .c-card3 img {
+        width: 84px;
+        height: 85px;
     }
 
     .c-card-title {
@@ -108,87 +134,108 @@
     }
 
     /* Our Stories Section Styles  */
-    .stories{
+    .stories {
         margin: 0 auto;
-        padding: 40px 16px;
-        
+        padding: 10px 16px 40px 16px;
+
     }
-    .story{
-        padding: 0px 0;
+
+    .story {
+        padding: 0;
     }
+
     .s-card {
         display: grid;
         justify-content: center;
         padding: 20px 0;
         gap: 0;
     }
+
     .story-card-left {
         display: none;
-        
     }
 
     .story-card-right {
         gap: 11px;
         grid-template-columns: repeat(2, 1fr);
-        /* margin: 0 auto; */
-        /* max-width: 90%; */
-
     }
 
     .s-card-right {
-        width: 174px;
-        /* height: 180px; */
-        height: auto;
+        width: 173.09px;
+        height: 179.59px;
+        border-radius: 9px;
     }
-    .s-card-right img{
+
+    .s-card-right img {
         width: 100%;
+        border-radius: 9.53px 9.53px 0px 0px;
     }
-    .s-card-btn{
+
+    .s-card-btn {
         padding: 6px 12px;
-    font-weight: 500;
-    font-size: 0.62rem;
-font-weight: 500;
+        font-weight: 500;
+        font-size: 0.62rem;
+        font-weight: 500;
     }
-    .s-card-title{
+
+    .s-card-title {
         font-size: 9.13px;
-font-weight: 700;
-line-height: 17.12px;
-padding: 14px 32px 19px 22px;
+        font-weight: 700;
+        line-height: 17.12px;
+        padding: 14px 32px 19px 22px;
     }
+
     /* Footer Section Styles  */
-    .footer{
-        padding: 36px 12px 40px 20px;
+    .footer {
+        padding: 36px 12px 36px 20px;
         height: 642px;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .footer-left-icon h2{
-    font-size: 2.1rem;
-line-height: 33.5px;
+
+    .footer-left-icon h2 {
+        font-size: 2.1rem;
+        line-height: 33.5px;
     }
-    .footer-left-icon img{
+
+    .footer-left-icon img {
         width: 69.23px;
-height: 69.23px;
+        height: 69.23px;
     }
-    .footer-left p{
-    font-size: var(--first-font);
-    line-height: 20px;
-    padding: 22px 0 5px 0;
+
+    .footer-left p {
+        font-size: var(--first-font);
+        line-height: 20px;
+        padding: 22px 0 5px 0;
     }
-    .footer-text{
-    font-size: 1.25rem;
-    font-weight: 600;
-    padding-bottom: 27px;
+
+    .footer-text {
+        font-size: var(--first-font1);
+        font-weight: 600;
+        padding-bottom: 27px;
     }
-    .footer-center li{
+
+    .footer-center li {
         padding-bottom: 17px;
     }
-    .footer-center a{
+
+    .footer-center a {
         font-size: var(--first-font);
     }
-    .footer-right h3{
+
+    .footer-right h3 {
         padding: 0px 0 36px 0;
     }
 
+    .footer-right h3 {
+        font-size: 1.37rem;
+        font-weight: 700;
+    }
+
+    .footer-right img {
+        width: 33.91px;
+        height: 33.91px;
+        padding-right: 8px;
+    }
 
 }
