@@ -2,6 +2,7 @@
 
     body {
         margin: 0 auto;
+        
     }
 
     .btn {
@@ -35,11 +36,12 @@
     .hero {
         padding: 20px 16px;
         flex-direction: column-reverse;
-        gap: 20px;
+        /* gap: 20px; */
     }
 
     .hero-text {
         text-align: center;
+        /* width: 90%; */
     }
 
     .hero-title {
@@ -54,9 +56,15 @@
         line-height: 18px;
         padding: 18px 0;
     }
-
+    .hero-img{
+        /* max-width: 576px; */
+    
+        display: flex;
+        /* width: 100%; */
+    
+    }
     .hero-img img {
-        width: 90vw;
+        max-width: 100%;
     }
 
     /* Standard Curriculum section Styles  */
@@ -73,8 +81,9 @@
     }
 
     .c-card {
-        width: 357px;
+        width: 90%;
         padding: 36px 28px;
+        justify-self: center;
     }
 
     .c-card-title {
@@ -108,7 +117,10 @@
         padding: 0px 0;
     }
     .s-card {
+        display: grid;
+        justify-content: center;
         padding: 20px 0;
+        gap: 0;
     }
     .story-card-left {
         display: none;
@@ -118,14 +130,15 @@
     .story-card-right {
         gap: 11px;
         grid-template-columns: repeat(2, 1fr);
-        margin: 0 auto;
-        max-width: 576px;
+        /* margin: 0 auto; */
+        /* max-width: 90%; */
 
     }
 
     .s-card-right {
         width: 174px;
-        height: 180px;
+        /* height: 180px; */
+        height: auto;
     }
     .s-card-right img{
         width: 100%;
@@ -176,4 +189,6 @@ height: 69.23px;
     .footer-right h3{
         padding: 0px 0 36px 0;
     }
+
+
 }
