@@ -85,6 +85,18 @@ section {
     line-height: 25px;
 }
 
+.section-caption {
+    color: var(--black-color);
+    font-size: var(--first-font1);
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.section-title::selection {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
 .btn {
     color: var(--white-color);
     font-size: var(--first-font1);
@@ -97,6 +109,7 @@ section {
     background-color: var(--skyblue-color);
     transition: ease-in-out 1s;
     box-shadow: 1px 1px 2px #ceb7b7;
+    cursor: pointer;
 }
 
 .btn-orange {
@@ -111,6 +124,7 @@ section {
 
 .btn-black:hover {
     background: var(--orange-color);
+    cursor: pointer;
 }
 
 .d-flex {
@@ -163,6 +177,7 @@ section {
 
 .navbar ul li a:hover {
     color: var(--purple-color2);
+    cursor: pointer;
 }
 
 .navbar li:nth-child(1) a {
@@ -275,6 +290,7 @@ marquee:hover {
 .c-card:hover {
     background: linear-gradient(180.00deg, rgba(141, 189, 151, 0.185), rgba(119, 97, 97, 0) 40%), rgba(127, 127, 180, 0.103);
     transition: ease-in-out 1s;
+    cursor: pointer;
 }
 
 .c-card1 {
@@ -339,6 +355,7 @@ marquee:hover {
 .slidebar-right:hover {
     background-color: var(--purple-color);
     transition: ease-in-out 1s;
+    cursor: pointer;
 }
 
 .slidebar img {
@@ -352,8 +369,6 @@ marquee:hover {
     background-size: cover;
     padding: 60px 0;
 }
-
-
 
 .s-card {
     padding: 80px 0;
@@ -397,6 +412,8 @@ marquee:hover {
 
 .story-card-btn:hover {
     background: var(--orange-color);
+    cursor: pointer;
+    cursor: pointer;
 }
 
 /* Right side card  */
@@ -441,6 +458,7 @@ marquee:hover {
 
 .s-card-btn:hover {
     background-color: var(--purple-color2);
+    cursor: pointer;
 }
 
 .sc-btn1,

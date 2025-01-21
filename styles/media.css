@@ -1,3 +1,5 @@
+/* Small (Mobile) Device Media Query */
+
 @media only screen and (max-width:576px) {
 
     body {
@@ -238,4 +240,41 @@
         padding-right: 8px;
     }
 
+}
+
+
+/* Medium (Tablet) Device Media Query  */
+@media only screen and (min-width:576px) and (max-width:992px) {
+    .navbar {
+        justify-content: space-around;
+    }
+    .navbar-logo h3{
+        display: none;
+    }
+    .navbar button{
+        display: none;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-text{
+        max-width: 80%;
+    }
+    .c-whole-card{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .s-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        flex-direction: column-reverse;
+        height: 800px;
+        align-items: center;
+        text-align: center;
+    }
+    
 }
