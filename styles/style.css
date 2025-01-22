@@ -83,6 +83,7 @@ section {
     background-color: var(--orange-color);
     color: var(--white-color);
 }
+
 .section-caption {
     color: var(--black-color);
     font-size: var(--first-font1);
@@ -377,6 +378,7 @@ marquee:hover {
     background: rgb(255, 255, 255);
     position: relative;
 }
+
 .story-card-left {
     cursor: zoom-out;
 }
@@ -457,10 +459,12 @@ marquee:hover {
     background-color: var(--purple-color2);
     cursor: pointer;
 }
-.s-card1:hover{
+
+.s-card1:hover {
     cursor: not-allowed;
 
 }
+
 .sc-btn1,
 .sc-btn2 {
     position: absolute;
@@ -511,6 +515,7 @@ footer {
     font-weight: 700;
     line-height: 39.51px;
 }
+
 .footer-left-icon h2:hover {
     color: var(--black-color);
     cursor: cell;
@@ -523,6 +528,7 @@ footer {
     line-height: 25px;
     padding-top: 35px;
 }
+
 .footer-left p:hover {
     cursor: pointer;
     color: var(--black-color-black-color);
@@ -541,10 +547,12 @@ footer {
     font-weight: 700;
     padding-bottom: 32px;
 }
-.footer-center:hover{
+
+.footer-center:hover {
     cursor: pointer;
     color: var(--black-color);
 }
+
 .footer-center li {
     list-style: none;
     padding-bottom: 20px;
@@ -561,6 +569,7 @@ footer {
     font-size: 1.62rem;
     font-weight: 700;
 }
+
 .footer-right h3:hover {
     cursor: grab;
 

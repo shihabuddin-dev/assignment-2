@@ -248,51 +248,61 @@
     .navbar {
         justify-content: space-around;
     }
-    .navbar-logo h3{
+
+    .navbar-logo h3 {
         display: none;
     }
-    .navbar button{
+
+    .navbar button {
         display: none;
     }
-    .hero{
+
+    .hero {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .hero-text{
+
+    .hero-text {
         max-width: 80%;
     }
-    .c-whole-card{
+
+    .c-whole-card {
         grid-template-columns: repeat(2, 40%);
         justify-content: center;
     }
+
     .c-card {
         width: unset;
     }
-    .c-card3{
+
+    .c-card3 {
         grid-column: span 2;
         width: 48%;
         justify-self: center;
     }
-    
-    .s-card{
+
+    .s-card {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .story-card-left{
+
+    .story-card-left {
         width: 600px;
         height: 670px;
 
     }
+
     .story-card-left img {
         width: 100%;
 
     }
-    .footer{
+
+    .footer {
         flex-direction: column-reverse;
         height: 800px;
         align-items: center;
         text-align: center;
     }
-    
+
 }
