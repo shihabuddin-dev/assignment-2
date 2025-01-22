@@ -163,7 +163,7 @@
     }
 
     .s-card-right {
-        width: 173.09px;
+        width: 168px;
         height: 179.59px;
         border-radius: 9px;
     }
@@ -262,13 +262,31 @@
         max-width: 80%;
     }
     .c-whole-card{
-        grid-template-columns: auto;
+        grid-template-columns: repeat(2, 40%);
         justify-content: center;
     }
+    .c-card {
+        width: unset;
+    }
+    .c-card3{
+        grid-column: span 2;
+        width: 48%;
+        justify-self: center;
+    }
+    
     .s-card{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .story-card-left{
+        width: 600px;
+        height: 670px;
+
+    }
+    .story-card-left img {
+        width: 100%;
+
     }
     .footer{
         flex-direction: column-reverse;

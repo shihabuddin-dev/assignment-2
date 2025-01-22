@@ -75,26 +75,19 @@ section {
 
 .section-title:hover {
     color: var(--orange-color);
+    cursor: grab;
 
-}
-
-.section-caption {
-    color: var(--black-color);
-    font-size: var(--first-font1);
-    font-weight: 400;
-    line-height: 25px;
-}
-
-.section-caption {
-    color: var(--black-color);
-    font-size: var(--first-font1);
-    font-weight: 400;
-    line-height: 25px;
 }
 
 .section-title::selection {
     background-color: var(--orange-color);
     color: var(--white-color);
+}
+.section-caption {
+    color: var(--black-color);
+    font-size: var(--first-font1);
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .btn {
@@ -158,6 +151,7 @@ section {
 
 .navbar-icon-text:hover {
     color: var(--skyblue-color);
+    cursor: grab;
 }
 
 .navbar-logo {
@@ -228,6 +222,7 @@ marquee:hover {
 
 .hero-title:hover {
     color: var(--purple-color);
+    cursor: grab;
 }
 
 .hero-caption {
@@ -290,7 +285,7 @@ marquee:hover {
 .c-card:hover {
     background: linear-gradient(180.00deg, rgba(141, 189, 151, 0.185), rgba(119, 97, 97, 0) 40%), rgba(127, 127, 180, 0.103);
     transition: ease-in-out 1s;
-    cursor: pointer;
+    cursor: grab;
 }
 
 .c-card1 {
@@ -382,6 +377,9 @@ marquee:hover {
     background: rgb(255, 255, 255);
     position: relative;
 }
+.story-card-left {
+    cursor: zoom-out;
+}
 
 .story-card-left img {
     border-radius: 16px 16px 0 0;
@@ -412,7 +410,6 @@ marquee:hover {
 
 .story-card-btn:hover {
     background: var(--orange-color);
-    cursor: pointer;
     cursor: pointer;
 }
 
@@ -460,7 +457,10 @@ marquee:hover {
     background-color: var(--purple-color2);
     cursor: pointer;
 }
+.s-card1:hover{
+    cursor: not-allowed;
 
+}
 .sc-btn1,
 .sc-btn2 {
     position: absolute;
@@ -511,6 +511,10 @@ footer {
     font-weight: 700;
     line-height: 39.51px;
 }
+.footer-left-icon h2:hover {
+    color: var(--black-color);
+    cursor: cell;
+}
 
 .footer-left p {
     color: var(--white-color);
@@ -518,6 +522,11 @@ footer {
     font-weight: 400;
     line-height: 25px;
     padding-top: 35px;
+}
+.footer-left p:hover {
+    cursor: pointer;
+    color: var(--black-color-black-color);
+    transition: ease-in-out 1s;
 }
 
 .footer {
@@ -532,7 +541,10 @@ footer {
     font-weight: 700;
     padding-bottom: 32px;
 }
-
+.footer-center:hover{
+    cursor: pointer;
+    color: var(--black-color);
+}
 .footer-center li {
     list-style: none;
     padding-bottom: 20px;
@@ -548,6 +560,10 @@ footer {
 .footer-right h3 {
     font-size: 1.62rem;
     font-weight: 700;
+}
+.footer-right h3:hover {
+    cursor: grab;
+
 }
 
 .footer-right img {
